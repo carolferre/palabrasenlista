@@ -1,0 +1,17 @@
+
+print("Dígame cuantas palabras tiene la lista")
+palabras=int(input())
+miLista=[]
+
+def palabrasenLista(palabras):
+    if palabras<1:
+        print("Imposible")
+        exit()
+    i = 1
+    for i in range(0,palabras):
+        print("Dígame la palabra",i,": ",end="")
+        palabra1=input()
+        miLista.append(palabra1)
+    print("La lista creada es: ",miLista)
+
+palabrasenLista(palabras)
